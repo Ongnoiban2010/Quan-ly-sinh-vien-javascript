@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body onload="renderListStudent()">
+	<div class="form-student">
+		<h3>Thong tin sinh vien</h3>
+		<label>Ho va ten</label>
+		<input type="text" id="fullname" name="">
+		<span class="error" id="fullname-error"></span>
+		<br>
+		<label>Email</label>
+		<input type="text" id="email" name="">
+		<span class="error" id="email-error"></span>
+		<br>
+		<label>So dien thoai</label>
+		<input type="text" id="number" name="">
+		<span class="error" id="phone-error"></span>
+		<br>
+		<label>Dia chi</label>
+		<input type="text" id="address" name="">
+		<span class="error" id="address-error"></span>
+		<br>
+		<label>Gioi tinh</label>
+		<input type="radio" id="male" name="gender" value="0"> Nam
+		<input type="radio" id="famale" name="gender" value="1"> Nu
+		<span class="error" id="gender-error"></span>
+		<br>
+		<label>&nbsp;</label>
+		<button type="" onclick="save()">Save</button>
+	</div>
+
+	<div class="list-student" id="list-student">
+		<table id="grid-students" width="600" border="1" cellpadding="0">
+			<h3>Danh sach sinh vien</h3>
+		</table>
+	</div>
+	<script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
+	<script src="../js/student.js"></script>
+</body>
+</html>
